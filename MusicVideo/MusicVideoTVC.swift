@@ -19,9 +19,6 @@ class MusicVideoTVC: UITableViewController {
         
         reachabilityStatusChanged()
         
-        // Call API
-        let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", completion: didLoadData)
     }
     
     func didLoadData(videos: [Videos]) {
@@ -41,16 +38,45 @@ class MusicVideoTVC: UITableViewController {
         switch reachabilityStatus {
         case NOACCESS:
             view.backgroundColor = UIColor.redColor()
-            //displayLabel.text = "No Internet"
-        case WIFI:
-            view.backgroundColor = UIColor.greenColor()
-            //displayLabel.text = "Reachable with WIFI"
-        case WWAN:
-            view.backgroundColor = UIColor.yellowColor()
-            //displayLabel.text = "Reachable with Cellular"
+            // move back to Main Queue
+            dispatch_async(dispatch_get_main_queue()) {
+                let alert = UIAlertController(title: "No Internet Access", message: "Please make sure you are connected to the Internet", preferredStyle: .Alert)
+            
+                let cancelAction = UIAlertAction(title: "Calcel", style: .Default) {
+                    action -> () in
+                    print("Cancel")
+                }
+            
+                let deleteAction = UIAlertAction(title: "Delete", style: .Destructive) {
+                    action -> () in
+                    print("delete")
+                }
+            
+                let okAction = UIAlertAction(title: "ok", style: .Default) {
+                    action -> () in
+                    print("ok")
+                }
+            
+                alert.addAction(okAction)
+                alert.addAction(cancelAction)
+                alert.addAction(deleteAction)
+            
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         default:
-            return
+            view.backgroundColor = UIColor.greenColor()
+            if videos.count > 0 {
+                print("do not refresh API")
+            } else {
+                runAPI()
+            }
         }
+    }
+    
+    func runAPI() {
+        // Call API
+        let api = APIManager()
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", completion: didLoadData)
     }
     
     // Is called just as the object is about to be dellallocated
