@@ -15,6 +15,8 @@
 		7A967EC31CE66FFD000FBB2F /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A967EC21CE66FFD000FBB2F /* MusicVideoTests.swift */; };
 		7A967ECE1CE66FFD000FBB2F /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A967ECD1CE66FFD000FBB2F /* MusicVideoUITests.swift */; };
 		7A967EE01CE7049D000FBB2F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A967EDF1CE7049D000FBB2F /* APIManager.swift */; };
+		7A967EE31CE7119F000FBB2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A967EE21CE7119F000FBB2F /* Constants.swift */; };
+		7A967EE51CE71340000FBB2F /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A967EE41CE71340000FBB2F /* MusicVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7A967ECD1CE66FFD000FBB2F /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		7A967ECF1CE66FFD000FBB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A967EDF1CE7049D000FBB2F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7A967EE21CE7119F000FBB2F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7A967EE41CE71340000FBB2F /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		7A967EAC1CE66FFD000FBB2F /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
+				7A967EE11CE7118B000FBB2F /* Utils */,
 				7A967EDE1CE7016A000FBB2F /* Supporting Files */,
 				7A967EDB1CE70102000FBB2F /* Model */,
 				7A967EDC1CE70113000FBB2F /* Controller */,
@@ -128,6 +133,7 @@
 		7A967EDB1CE70102000FBB2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7A967EE41CE71340000FBB2F /* MusicVideo.swift */,
 				7A967EDF1CE7049D000FBB2F /* APIManager.swift */,
 			);
 			name = Model;
@@ -158,6 +164,14 @@
 				7A967EAD1CE66FFD000FBB2F /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A967EE11CE7118B000FBB2F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A967EE21CE7119F000FBB2F /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +310,9 @@
 			files = (
 				7A967EE01CE7049D000FBB2F /* APIManager.swift in Sources */,
 				7A967EB01CE66FFD000FBB2F /* ViewController.swift in Sources */,
+				7A967EE51CE71340000FBB2F /* MusicVideo.swift in Sources */,
 				7A967EAE1CE66FFD000FBB2F /* AppDelegate.swift in Sources */,
+				7A967EE31CE7119F000FBB2F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
