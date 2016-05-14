@@ -111,7 +111,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftF-5c-Jp1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rights" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftF-5c-Jp1">
                                 <rect key="frame" x="1" y="458" width="599" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="9dg-NV-UiX"/>
@@ -138,16 +138,57 @@
                             <constraint firstItem="1bS-V6-IkM" firstAttribute="top" secondItem="V9g-ZL-0Qh" secondAttribute="bottom" constant="1" id="AWO-mF-n8d"/>
                             <constraint firstItem="jgZ-74-Ktu" firstAttribute="trailing" secondItem="asy-fc-Dvd" secondAttribute="trailingMargin" id="CXw-K3-oro"/>
                             <constraint firstItem="pby-Nq-LVM" firstAttribute="top" secondItem="D4f-qh-V88" secondAttribute="bottom" id="GfV-jx-VyL"/>
+                            <constraint firstAttribute="trailing" secondItem="V9g-ZL-0Qh" secondAttribute="trailing" id="N0I-w8-oDi"/>
                             <constraint firstItem="V9g-ZL-0Qh" firstAttribute="leading" secondItem="ftF-5c-Jp1" secondAttribute="leading" id="PE8-NJ-2xF"/>
                             <constraint firstItem="1bS-V6-IkM" firstAttribute="centerY" secondItem="jgZ-74-Ktu" secondAttribute="centerY" id="YAw-Pi-J19"/>
                             <constraint firstItem="1bS-V6-IkM" firstAttribute="leading" secondItem="asy-fc-Dvd" secondAttribute="leadingMargin" id="YQ7-76-4J5"/>
                             <constraint firstItem="ftF-5c-Jp1" firstAttribute="bottom" secondItem="Ryz-RS-yBD" secondAttribute="top" id="cJv-Cl-llm"/>
                             <constraint firstItem="V9g-ZL-0Qh" firstAttribute="top" secondItem="D4f-qh-V88" secondAttribute="bottom" constant="68" id="etR-ZL-Mxc"/>
                             <constraint firstItem="pby-Nq-LVM" firstAttribute="leading" secondItem="asy-fc-Dvd" secondAttribute="leadingMargin" constant="-13" id="igx-UF-Et1"/>
+                            <constraint firstItem="V9g-ZL-0Qh" firstAttribute="top" secondItem="D4f-qh-V88" secondAttribute="bottom" id="pbt-70-9xd"/>
+                            <constraint firstItem="V9g-ZL-0Qh" firstAttribute="centerX" secondItem="asy-fc-Dvd" secondAttribute="centerX" id="tkh-W5-rFn"/>
                             <constraint firstItem="pby-Nq-LVM" firstAttribute="centerX" secondItem="asy-fc-Dvd" secondAttribute="centerX" id="ulp-ip-cZ3"/>
+                            <constraint firstItem="Ryz-RS-yBD" firstAttribute="top" secondItem="V9g-ZL-0Qh" secondAttribute="bottom" constant="8" symbolic="YES" id="vz5-do-78O"/>
                             <constraint firstItem="V9g-ZL-0Qh" firstAttribute="trailing" secondItem="ftF-5c-Jp1" secondAttribute="trailing" id="wGq-O0-eHl"/>
                             <constraint firstItem="pby-Nq-LVM" firstAttribute="centerX" secondItem="V9g-ZL-0Qh" secondAttribute="centerX" id="zk7-Qe-o1t"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="N0I-w8-oDi"/>
+                                <exclude reference="pbt-70-9xd"/>
+                                <exclude reference="tkh-W5-rFn"/>
+                                <exclude reference="vz5-do-78O"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="pby-Nq-LVM"/>
+                                <exclude reference="jgZ-74-Ktu"/>
+                                <exclude reference="ftF-5c-Jp1"/>
+                                <exclude reference="1bS-V6-IkM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GfV-jx-VyL"/>
+                                <exclude reference="igx-UF-Et1"/>
+                                <exclude reference="ulp-ip-cZ3"/>
+                                <exclude reference="zk7-Qe-o1t"/>
+                                <exclude reference="7x0-7V-RZL"/>
+                                <exclude reference="AWO-mF-n8d"/>
+                                <exclude reference="YAw-Pi-J19"/>
+                                <exclude reference="YQ7-76-4J5"/>
+                                <exclude reference="7Zr-BM-BPh"/>
+                                <exclude reference="cJv-Cl-llm"/>
+                                <exclude reference="CXw-K3-oro"/>
+                                <exclude reference="9yG-uv-U1g"/>
+                                <include reference="N0I-w8-oDi"/>
+                                <exclude reference="PE8-NJ-2xF"/>
+                                <exclude reference="etR-ZL-Mxc"/>
+                                <include reference="pbt-70-9xd"/>
+                                <include reference="tkh-W5-rFn"/>
+                                <exclude reference="wGq-O0-eHl"/>
+                                <include reference="vz5-do-78O"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems>
                         <barButtonItem systemItem="play" id="Hrq-Eb-VR6">

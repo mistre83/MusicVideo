@@ -21,6 +21,10 @@ class MusicVideoDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MusicVideoDetailVC.preferredFontChanged), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        
+        preferredFontChanged()
+        
         self.title = videos.vArtist
 
         vName.text = videos.vName
@@ -34,4 +38,17 @@ class MusicVideoDetailVC: UIViewController {
             videoImage.image = UIImage(named: "imageNotAvailable")
         }
     }
+    
+    func preferredFontChanged() {
+        print("The preferred font has changed on Detail")
+        self.vName.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        self.vPrice.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        self.vRights.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        self.vGenre.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
+    }
+    
 }
