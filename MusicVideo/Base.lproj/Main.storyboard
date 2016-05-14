@@ -22,40 +22,40 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="138"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJE-AP-Yq2">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qJE-AP-Yq2">
                                             <rect key="frame" x="8" y="8" width="150" height="115"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="150" id="9dd-eP-npg"/>
+                                                <constraint firstAttribute="width" constant="150" id="SfA-U9-Hhz"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="musicTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX4-Ie-owm">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="musicTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX4-Ie-owm">
                                             <rect key="frame" x="174" y="37" width="418" height="86"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVt-9D-XgF">
-                                            <rect key="frame" x="174" y="21" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVt-9D-XgF">
+                                            <rect key="frame" x="174" y="8" width="54" height="28"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="42" id="lcx-ka-Adx"/>
+                                                <constraint firstAttribute="height" constant="28" id="Ti7-6r-d5G"/>
+                                                <constraint firstAttribute="width" constant="54" id="VH8-yu-acu"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="MVt-9D-XgF" firstAttribute="top" secondItem="Zhm-l4-BnV" secondAttribute="topMargin" constant="13" id="Fb6-aw-IEz"/>
-                                        <constraint firstItem="ZX4-Ie-owm" firstAttribute="trailing" secondItem="Zhm-l4-BnV" secondAttribute="trailingMargin" id="HjD-tB-Aft"/>
-                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="bottom" secondItem="ZX4-Ie-owm" secondAttribute="bottom" id="Olr-hD-Kh3"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="MVt-9D-XgF" secondAttribute="bottom" constant="81" id="TKE-pG-0vC"/>
-                                        <constraint firstItem="MVt-9D-XgF" firstAttribute="leading" secondItem="qJE-AP-Yq2" secondAttribute="trailing" constant="16" id="cD7-V3-jPD"/>
-                                        <constraint firstItem="MVt-9D-XgF" firstAttribute="leading" secondItem="ZX4-Ie-owm" secondAttribute="leading" id="hFv-2y-O4i"/>
-                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="top" secondItem="Zhm-l4-BnV" secondAttribute="topMargin" id="hYx-jY-nx2"/>
-                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="bottom" secondItem="Zhm-l4-BnV" secondAttribute="bottomMargin" id="iyG-zx-QuS"/>
-                                        <constraint firstItem="ZX4-Ie-owm" firstAttribute="top" secondItem="Zhm-l4-BnV" secondAttribute="topMargin" constant="29" id="rrK-XD-X3j"/>
-                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="leading" secondItem="Zhm-l4-BnV" secondAttribute="leadingMargin" id="wBI-4z-fqs"/>
+                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="leading" secondItem="Zhm-l4-BnV" secondAttribute="leadingMargin" id="6Aq-5w-rS6"/>
+                                        <constraint firstItem="ZX4-Ie-owm" firstAttribute="top" secondItem="MVt-9D-XgF" secondAttribute="bottom" constant="1" id="BfD-aQ-OhC"/>
+                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="top" secondItem="Zhm-l4-BnV" secondAttribute="topMargin" id="GcW-ms-ylb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="qJE-AP-Yq2" secondAttribute="bottom" constant="7" id="If9-Cj-9zx"/>
+                                        <constraint firstItem="MVt-9D-XgF" firstAttribute="leading" secondItem="ZX4-Ie-owm" secondAttribute="leading" id="MVX-F9-7sH"/>
+                                        <constraint firstItem="ZX4-Ie-owm" firstAttribute="trailing" secondItem="Zhm-l4-BnV" secondAttribute="trailingMargin" id="dFo-XY-SWh"/>
+                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="top" secondItem="MVt-9D-XgF" secondAttribute="top" id="gk8-at-hLC"/>
+                                        <constraint firstItem="MVt-9D-XgF" firstAttribute="leading" secondItem="qJE-AP-Yq2" secondAttribute="trailing" constant="16" id="l1Y-W2-l8m"/>
+                                        <constraint firstItem="qJE-AP-Yq2" firstAttribute="bottom" secondItem="ZX4-Ie-owm" secondAttribute="bottom" id="nBj-NJ-Nzu"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
