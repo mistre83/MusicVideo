@@ -60,6 +60,10 @@ class Videos {
         return _vLinkToiTunes
     }
     
+    var vGenre: String {
+        return _vGenre
+    }
+    
     var vReleaseDte: String {
         return _vReleaseDte
     }
@@ -81,7 +85,7 @@ class Videos {
         }
         
         // Price of video
-        if let price = data["im:prices"] as? JSONDictionary, vPrice = price["label"] as? String {
+        if let price = data["im:price"] as? JSONDictionary, vPrice = price["label"] as? String {
             self._vPrice = vPrice
         } else {
             _vPrice = ""
