@@ -106,7 +106,7 @@ class Videos {
         }
         
         // Video URLs
-        if let video = data["links"] as? JSONArray, vUrl = video[1] as? JSONDictionary, vHref = vUrl["attributes"] as? JSONDictionary, vVideoUrl = vHref["href"] as? String {
+        if let video = data["link"] as? JSONArray, vUrl = video[1] as? JSONDictionary, vHref = vUrl["attributes"] as? JSONDictionary, vVideoUrl = vHref["href"] as? String {
             self._vVideoUrl = vVideoUrl
         } else {
             _vVideoUrl = ""
