@@ -21,6 +21,7 @@
 		7A967EEC1CE73EDF000FBB2F /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A967EEB1CE73EDF000FBB2F /* MusicVideoTVC.swift */; };
 		7A967EEE1CE7563A000FBB2F /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A967EED1CE7563A000FBB2F /* MusicVideoTableViewCell.swift */; };
 		7AE8DAF81CE78210007AE205 /* MusicVideoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8DAF71CE78210007AE205 /* MusicVideoDetailVC.swift */; };
+		7AE8DAFA1CE7A6A3007AE205 /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8DAF91CE7A6A3007AE205 /* SettingsTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		7A967EEB1CE73EDF000FBB2F /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 		7A967EED1CE7563A000FBB2F /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
 		7AE8DAF71CE78210007AE205 /* MusicVideoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoDetailVC.swift; sourceTree = "<group>"; };
+		7AE8DAF91CE7A6A3007AE205 /* SettingsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		7A967EDC1CE70113000FBB2F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7AE8DAF91CE7A6A3007AE205 /* SettingsTVC.swift */,
 				7AE8DAF71CE78210007AE205 /* MusicVideoDetailVC.swift */,
 				7A967EEB1CE73EDF000FBB2F /* MusicVideoTVC.swift */,
 				7A967EED1CE7563A000FBB2F /* MusicVideoTableViewCell.swift */,
@@ -340,6 +343,7 @@
 				7A967EAE1CE66FFD000FBB2F /* AppDelegate.swift in Sources */,
 				7A967EEA1CE72571000FBB2F /* Reachability.m in Sources */,
 				7A967EE31CE7119F000FBB2F /* Constants.swift in Sources */,
+				7AE8DAFA1CE7A6A3007AE205 /* SettingsTVC.swift in Sources */,
 				7A967EEC1CE73EDF000FBB2F /* MusicVideoTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
