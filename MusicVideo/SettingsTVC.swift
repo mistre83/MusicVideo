@@ -33,6 +33,9 @@ class SettingsTVC: UITableViewController {
             let theValue = NSUserDefaults.standardUserDefaults().objectForKey("APICNT") as! Int
             APICnt.text = "\(theValue)"
             sliderCnt.value = Float(theValue)
+        } else {
+            sliderCnt.value = 10.0
+            APICnt.text = ("\(Int(sliderCnt.value))")
         }
     }
     
@@ -42,6 +45,7 @@ class SettingsTVC: UITableViewController {
         defaults.setObject(Int(sliderCnt.value), forKey: "APICNT")
         APICnt.text = ("\(Int(sliderCnt.value))")
     }
+    
     @IBAction func touchIdSec(sender: UISwitch) {
         let defaults = NSUserDefaults.standardUserDefaults()
         
@@ -51,7 +55,6 @@ class SettingsTVC: UITableViewController {
             defaults.setBool(false, forKey: "SecSettings")
         }
     }
-    
     
     func preferredFontChanged() {
         abautDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
