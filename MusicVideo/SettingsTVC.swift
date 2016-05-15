@@ -23,16 +23,31 @@ class SettingsTVC: UITableViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SettingsTVC.preferredFontChanged), name: UIContentSizeCategoryDidChangeNotification, object: nil)
 
-        self.tableView.alwaysBounceVertical = false
+        tableView.alwaysBounceVertical = false
+        
+        title = "Settings"
+        
+        touchID.on = NSUserDefaults.standardUserDefaults().boolForKey("SecSettings")
        
     }
     
+    @IBAction func touchIdSec(sender: UISwitch) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if self.touchID.on {
+            defaults.setBool(touchID.on, forKey: "SecSettings")
+        } else {
+            defaults.setBool(false, forKey: "SecSettings")
+        }
+    }
+    
+    
     func preferredFontChanged() {
-        self.abautDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
-        self.feedbackDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
-        self.securityDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        abautDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        feedbackDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        securityDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         bestImageDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
-        self.APICnt.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        APICnt.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
     }
     
     deinit {
